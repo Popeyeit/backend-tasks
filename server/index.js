@@ -49,7 +49,7 @@ class Server {
     });
   }
   startListening() {
-    this.server.listen(process.env.PORT || 80, () => {
+    this.server.listen(process.env.PORT || 3005, () => {
       console.log('start server');
     });
   }
