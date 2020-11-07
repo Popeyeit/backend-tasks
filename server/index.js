@@ -50,7 +50,8 @@ class Server {
   }
   startListening() {
     this.server.listen(process.env.PORT || 80, () => {
-      console.log('start server');
+      const port = server.address().port;
+      console.log('start server' + port);
     });
   }
 }
